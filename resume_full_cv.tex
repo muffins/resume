@@ -26,12 +26,12 @@
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
-\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm, footskip=.5cm} % Configure page margins with geometry
+\geometry{left=1cm, top=1.5cm, right=1cm, bottom=1.5cm, footskip=.25cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
 
 % Color for highlights
-\colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
 %\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
 
 % Colors for text - uncomment and modify
@@ -41,6 +41,23 @@
 %\definecolor{lighttext}{HTML}{414141}
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+
+
+%-------------------------------------------------------------------------------
+%                Macros for Toggling Sections
+%-------------------------------------------------------------------------------
+\usepackage{environ}
+\usepackage{etoolbox}
+
+% the toggle is initially false
+\newtoggle{fullResume}
+
+% Comment here to display short resume conents
+\toggletrue{fullResume}
+
+\NewEnviron{displaySection}{%
+  \iftoggle{fullResume}{\BODY}{}%
+}
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -57,8 +74,7 @@
 \linkedin{nanderson7}
 %\skype{skypeid}
 %\stackoverflow{SOid}{SOname}
-%\twitter{@twit}
-%\linkedin{linkedin name}
+\twitter{@poppyseedplehzr}
 %\reddit{reddit account}
 %\xing{xing name}
 %\extrainfo{test} % Other text you want to include on this line
@@ -79,18 +95,24 @@
 %	Each section is imported separately, open each file in turn to modify content
 %----------------------------------------------------------------------------------------
 
-\input{cv-sections/education.tex}
 \input{cv-sections/experience.tex}
-\newpage % Force a new page for looks
-\input{cv-sections/skills.tex}
-\input{cv-sections/presentation.tex}
-\newpage % Force a new page for looks
-\input{cv-sections/extracurricular.tex}
+\input{cv-sections/education.tex}
+%\newpage
+\input{cv-sections/presentations.tex}
+
+\begin{displaySection}
+    \input{cv-sections/extracurricular.tex}
+\end{displaySection}
+
 \input{cv-sections/honors.tex}
+\input{cv-sections/skills.tex}
 
-%\input{cv-sections/writing.tex}
-%\input{cv-sections/committees.tex}
+\begin{displaySection}
+    \input{cv-sections/publications.tex}
+    \input{cv-sections/associations.tex}
+\end{displaySection}
 
+%\newpage % Force a new page for looks, as needed.
 %----------------------------------------------------------------------------------------
 
 \end{document}
