@@ -1,0 +1,141 @@
+%----------------------------------------------------------------------------------------
+%	SECTION TITLE
+%----------------------------------------------------------------------------------------
+
+\cvsection{Conference Talks and Workshops}
+
+%----------------------------------------------------------------------------------------
+%	SECTION CONTENT
+%----------------------------------------------------------------------------------------
+
+\begin{cventries}
+
+%------------------------------------------------
+
+\cventry
+{The osquery file carver} % Role
+{OSDFcon} % Event
+{Herndon, VA, USA} % Location
+{Oct. 2018} % Date(s)
+{ % Description(s)
+\begin{displaySection}
+    \begin{cvitems}
+        \item {Introduced the osquery file "carving" capability, it's goals, and non-goals}
+    \end{cvitems}
+\end{displaySection}
+}
+
+%------------------------------------------------
+
+\cventry
+{Docker Detection and Forensics, ‘Gotta catch them all’!} % Role
+{OSDFcon} % Event
+{Herndon, VA, USA} % Location
+{Oct. 2018} % Date(s)
+{
+\begin{cvitems}
+    \begin{displaySection}
+        \item {Detection and response workshop focused on leveraging osquery to secure Docker containers}
+    \end{displaySection}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\cventry
+{Keynote - Evolving Our Open Source Community} % Role
+{QueryCon} % Event
+{San Francisco, CA, USA} % Location
+{June 2018} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+    \begin{displaySection}
+        \item {Addressed the challenges of scaling an Open Source project and community, https://www.youtube.com/watch?v=RVNEUqgwv5A}
+    \end{displaySection}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\cventry
+{Detecting compromise on Windows endpoints with osquery} % Role
+{BlueHat} % Event
+{Redmond, WA, USA} % Location
+{Nov. 2018} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+    \begin{displaySection}
+        \item {Discussed how to scale osquery to detect compromise at enterprise levels, as well as use-cases and success stories from the field. https://www.slideshare.net/MSbluehat/bluehat-v17-detecting-compromise-on-windows-endpoints-with-osquery-84024735}
+    \end{displaySection}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\cventry
+{Hunting Malware at Scale with osquery} % Role
+{Brucon 0x8} % Event
+{Ghent, Belgium} % Location
+{Oct. 2016} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+    \begin{displaySection}
+        \item {Same workshop as DEFCON 24}
+        \item {https://brucon0x082016.sched.com/event/8YCB/hunting-malware-with-osquery-at-scale}
+    \end{displaySection}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\cventry
+{Open Source Security Panel} % Role
+{Structure Security} % Event
+{San Francisco, CA, USA} % Location
+{Sep. 2016} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+    \begin{displaySection}
+        \item {Organized and took part in a panel discussion about open source security tooling}
+        \item {Fortune Article - http://fortune.com/2016/09/27/facebook-uber-slack-pandora-open-source-security}
+        \item {Guardian Article - https://www.theregister.co.uk/2016/09/28/oh\_all\_right\_says\_facebook\_well\_let\_windows\_admins\_run\_osquery}
+        \item {Facebook Graph Blog - https://www.facebook.com/notes/protect-the-graph/introducing-osquery-for-windows/1775110322729111/}
+    \end{displaySection}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\cventry
+{Hunting Malware at Scale with osquery} % Role
+{DEFCON 24} % Event
+{Las Vegas, Nevada, USA} % Location
+{Aug. 2016} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+    \begin{displaySection}
+        \item {4 hour workshop focused on using osquery to scale host based detections}
+        \item {Covered standing up a SIEM, configuring an endpoint EDR, and building detections around host based security telemetry}
+        \item {https://brucon0x082016.sched.com/event/8YCB/hunting-malware-with-osquery-at-scale}
+    \end{displaySection}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\cventry
+{Hardware and Trust Security: Explain it like I’m 5} % Role
+{DEFCON 23} % Event
+{Las Vegas, Nevada, USA} % Location
+{Aug. 2015} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+    \begin{displaySection}
+        \item {Covered basic concepts of Secure and Trusted boot technologies, https://www.youtube.com/watch?v=2gbooa3tO5o}
+    \end{displaySection}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\end{cventries}
