@@ -1,6 +1,6 @@
 ## Resume Files!
 
-This repo is a LaTex project with all of my resume information.
+This repo is a LaTeX project with all of my resume information.
 
 ### Building:
 
