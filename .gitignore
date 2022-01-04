@@ -4,3 +4,6 @@
 *.aux
 *.gz
 *.tar
+
+*.fls
+*.fdb_latexmk
